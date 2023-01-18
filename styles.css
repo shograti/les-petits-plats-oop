@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --red: #D04F4F
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--red);
+}
+
+.search_bar {
+    position: relative;
+    max-width: 1200px;
+    margin: 0em 1em;
+}
+
+.search_bar input {
+    background-color: #E7E7E7;
+    width: 100%;
+    border-radius: 5px;
+    height: 69px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0em 1em;
+}
+
+.search_bar input::placeholder {
+    font-size: 18px;
+}
+
+.search_bar img {
+    position: absolute;
+    right: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}

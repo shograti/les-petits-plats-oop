@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Les petits plats</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Les petits plats">
+        <h1>Les petits plats</h1>
+    </header>
+    <section class="search_bar">
+        <input type="text" placeholder="Rechercher une recette" id="search-input">
+        <img src="./assets/search-icon.png" alt="">
+    </section>
+    <section class="tags_container"></section>
+    <section class="filters_container">
+        <div id="ingredients-filter-list">
+            <div class="filter-list-head"></div>
+            <div class="filter-list-body"></div>
+        </div>
+        <div id="appliances-filter-list">
+            <div class="filter-list-head"></div>
+            <div class="filter-list-body"></div>
+        </div>
+        <div class="filter-list-head"></div>
+        <div class="filter-list-body"></div>
+        <div id="ustensils-filter-list">
+
+        </div>
+    </section>
+    <main>
+
+    </main>
+    <script src="./src/utils/index.js"></script>
+    <script src="./data/recipes.js"></script>
+    <script src="./src/components/SearchBar.js"></script>
+    <script src="./src/components/Recipe.js"></script>
+    <script src="src/components/Filter"></script>
+</body>
+
+</html>
