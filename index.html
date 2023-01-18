@@ -16,32 +16,42 @@
     </header>
     <section class="search_bar">
         <input type="text" placeholder="Rechercher une recette" id="search-input">
-        <img src="./assets/search-icon.png" alt="">
+        <img src="./assets/search-icon.png" alt="Rechercher">
     </section>
-    <section class="tags_container"></section>
+    <section id="tags-container"></section>
     <section class="filters_container">
-        <div id="ingredients-filter-list">
-            <div class="filter-list-head"></div>
-            <div class="filter-list-body"></div>
+        <div>
+            <div class="filter-list-head">
+                <p>Ingrédients</p>
+                <img src="./assets/arrow-down.png" alt="">
+            </div>
+            <div class="filter-list-body" id="ingredients-filter-list"></div>
         </div>
-        <div id="appliances-filter-list">
-            <div class="filter-list-head"></div>
-            <div class="filter-list-body"></div>
+        <div>
+            <div class="filter-list-head">
+                <p>Appareils</p>
+                <img src="./assets/arrow-down.png" alt="">
+            </div>
+            <div class="filter-list-body" id="appliances-filter-list"></div>
         </div>
-        <div class="filter-list-head"></div>
-        <div class="filter-list-body"></div>
-        <div id="ustensils-filter-list">
-
+        <div>
+            <div class="filter-list-head">
+                <p>Ustensils</p>
+                <img src="./assets/arrow-down.png" alt="">
+            </div>
+            <div class="filter-list-body" id="ustensils-filter-list"></div>
         </div>
     </section>
     <main>
 
     </main>
-    <script src="./src/utils/index.js"></script>
     <script src="./data/recipes.js"></script>
+    <script src="./src/utils/index.js"></script>
     <script src="./src/components/SearchBar.js"></script>
     <script src="./src/components/Recipe.js"></script>
-    <script src="src/components/Filter"></script>
+    <script src="src/components/Tag.js"></script>
+    <script src="src/components/Filter.js"></script>
+    <script src="src/components/FilterList.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,7 @@
 const mainContainer = document.querySelector('main');
 
+const tags = [];
+
 class Recipe {
   constructor(recipe) {
     this.id = recipe.id;
@@ -61,6 +63,4 @@ recipes.forEach((recipe) => {
     recipeInstance.createCard();
   }
 });
-
-
 
