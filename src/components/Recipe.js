@@ -1,6 +1,6 @@
 const mainContainer = document.querySelector('main');
 
-const tags = [];
+
 
 class Recipe {
   constructor(recipe) {
@@ -12,6 +12,7 @@ class Recipe {
     this.appliance = recipe.appliance;
     this.ustensils = recipe.ustensils;
   }
+
   createCard() {
     const card = document.createElement('article');
     const imagePlaceholder = document.createElement('div');
@@ -63,4 +64,3 @@ recipes.forEach((recipe) => {
     recipeInstance.createCard();
   }
 });
-

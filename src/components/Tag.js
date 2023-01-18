@@ -36,7 +36,6 @@ class Tag {
           break;
       }
       tag.remove();
-      tags.sort((a, b) => a.name.localeCompare(b.name));
     });
 
     tag.textContent = this.name;
